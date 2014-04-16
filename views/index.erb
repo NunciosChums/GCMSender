@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<title>GCM Sender</title>
+	<link href="/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="span12">
+	<h1>GCM sender</h1>
+
+	<form action="/" method="post" role="form">
+		<input type="hidden" name="_method" value="put" />
+		
+		<div class="form-group">
+			<label for="apiKey">API Key(<a href="https://console.developers.google.com/project" target="_blank">Google Developer Console</a> - [project] - APIs&auth - Credentials - Key for server applications - API key)</label>
+			<input id="apiKey" name="apiKey" value="<%= apiKey %>" placeholder="AIzaSyBRIejtalg7F3JaCKAg54C438u9ihfbhZk" class="form-control span12"/>
+		</div>
+		<br />
+
+		<div class="form-group">
+			<label for="regId">Reg IDs(<a href="http://developer.android.com/google/gcm/client.html#sample-register" target="_blank">google sample</a>, <a href="http://susemi99.kr/1012">my blog</a>)</label>
+			<textarea id="regId" name="regId" placeholder="qwer, asdf, zxcv" class="form-control span12"><%= regId %></textarea>
+		</div>
+		<br />
+
+		<div class="form-group">
+			<label for="message">Message (JSON)</label>
+			<textarea id="message" name="msg" placeholder='{"msg": "hello", "count": 34}' class="form-control span12"><%= msg %></textarea>
+		</div> 
+		<br />
+		<button class="btn btn-default" type="submit">Send</button>
+	</form>
+	 
+	Result : 
+	<pre><%= response %></pre>
+</body>
+</html>
