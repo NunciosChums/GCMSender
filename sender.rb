@@ -30,5 +30,5 @@ put '/' do
 		result = "error : fill all fields"
 	end
 
-	erb :index, :locals => {apiKey: apiKey, regId: regIdStr, msg: msg, response: result.to_s.force_encoding("UTF-8")) }
+	erb :index, :locals => {apiKey: apiKey, regId: regIdStr, msg: msg, response: result.to_s.force_encoding("UTF-8") }
 end
