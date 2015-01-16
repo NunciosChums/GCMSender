@@ -18,23 +18,23 @@
 		<br />
 
 		<div class="form-group">
-			<label for="regId">Reg IDs(<a href="http://developer.android.com/google/gcm/client.html#sample-register" target="_blank">google sample</a>, <a href="http://susemi99.kr/1012">my blog</a>)</label>
-			<textarea id="regId" name="regId" placeholder="qwer, asdf, zxcv" class="form-control span12"><%= regId %></textarea>
+			<label for="regId">Reg IDs(<a href="http://developer.android.com/google/gcm/client.html#sample-register" target="_blank">Google sample</a>, <a href="http://susemi99.kr/1012">my blog</a>)</label>
+			<textarea id="regId" name="regId" placeholder="qwer, asdf, zxcv" class="form-control span12" rows="5"><%= regId %></textarea>
 		</div>
 		<br />
 
 		<div class="form-group">
 			<label for="message">Message (JSON)</label>
 			<textarea id="message" name="msg" placeholder='{"msg": "hello", "count": 34}' class="form-control span12"><%= msg %></textarea>
-		</div> 
+		</div>
 		<br />
 		<button class="btn btn-default" type="submit">Send</button>
 	</form>
-	 
-	Result : 
+
+	Result :
 	<pre><%= response %></pre>
 	<br />
 
-	<a href="https://github.com/susemi99/GCMSender" target="_blank">Source code</a>
+	<a href="https://github.com/susemi99/GCMSender" target="_blank">Full source code</a>
 </body>
 </html>
