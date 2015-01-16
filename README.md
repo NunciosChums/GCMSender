@@ -10,3 +10,9 @@ run :
 <pre>
 ruby sender.rb
 </pre>
+
+
+demo :
+<pre>
+https://gcmsender.herokuapp.com
+</pre>
