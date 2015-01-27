@@ -3,7 +3,7 @@ require 'gcm'
 
 # for production mode
 # set :port, 3002
-# set :environment, :production
+set :environment, :production
 
 get '/' do
 	erb :index, :locals => {apiKey: '', regId: '', msg: ''}
