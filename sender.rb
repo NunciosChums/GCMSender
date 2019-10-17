@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'gcm'
+require 'fcm'
 
 # for production mode
 # set :port, 3002
@@ -17,10 +17,10 @@ put '/' do
 	if (!apiKey.empty? && !regIdStr.empty? && !msg.empty?)
 	begin
 		begin
-			gcm = GCM.new(apiKey)
+			fcm = FCM.new(apiKey)
 			regIDs= regIdStr.split(',')
 			options = {data: JSON.parse(msg)}
-			response = gcm.send_notification(regIDs, options)
+			response = fcm.send_notification(regIDs, options)
 			result = JSON.pretty_generate(response)
 		rescue => error
 			result = error

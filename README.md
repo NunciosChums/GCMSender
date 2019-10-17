@@ -2,7 +2,7 @@ GCMSender
 =========
 need :
 <pre>
-gem install gcm
+gem install fcm
 gem install sinatra
 </pre>
 
